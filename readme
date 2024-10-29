@@ -1,7 +1,64 @@
-Projeto 
+Documento de Levantamento de Requisitos
 
-integrantes
+Projeto: Sistema de Gerenciamento de Estoque de Hardware
+Data: 24/10/2024
+Responsáveis:
 
-David j abreu
+	•	Matheus da Silva da Cruz
+	•	David J. Abreu da Silva
 
-Matheus da silva da cruz
+1. Introdução
+
+1.1. Objetivo
+
+Este documento tem como objetivo detalhar os requisitos funcionais e não funcionais do sistema “Sistema de Gerenciamento de Estoque de Hardware”.
+
+1.2. Escopo
+
+O sistema será responsável por:
+
+	•	Gerenciamento do cadastro e controle de equipamentos de hardware em 4 laboratórios.
+	•	Agendamento de manutenções e registro de reparos e peças substituídas.
+
+2. Requisitos Funcionais
+
+2.1. Cadastro de Equipamentos
+
+	•	O sistema deverá permitir o cadastro de equipamentos de hardware, com todas as suas especificações técnicas.
+	•	Cada equipamento deverá estar vinculado a um laboratório específico.
+	•	Exibir o status de cada equipamento.
+
+2.2. Controle de Reparos e Manutenções
+
+	•	O sistema deverá permitir o agendamento e acompanhamento de manutenções pendentes e realizadas, com suas respectivas datas.
+	•	Registro das peças utilizadas em cada manutenção.
+
+2.3. Controle de Peças e Estoque
+
+	•	O sistema deverá permitir o cadastro de peças de hardware, incluindo informações sobre marca e quantidade.
+	•	Controle de estoque para monitorar peças adicionadas e retiradas; quando uma peça estiver em falta, o sistema deverá exibir um alerta.
+
+2.4. Gerenciamento de Laboratórios
+
+	•	O sistema deverá gerenciar múltiplos laboratórios, associando-os aos equipamentos e peças de hardware.
+	•	Fornecimento de painéis informativos que exibam o status dos equipamentos e a quantidade de peças em estoque em todos os laboratórios.
+
+2.5. Controle de Acesso e Usuários
+
+	•	O sistema deverá permitir a criação de perfis de usuários com diferentes níveis de acesso (ex. técnicos e administradores).
+
+3. Requisitos Não Funcionais
+
+3.1. Usabilidade
+
+	•	O sistema deverá possuir uma interface intuitiva para facilitar o uso dos usuários.
+
+4. Requisitos de Interface
+
+4.1. Interface Gráfica
+
+	•	O sistema deverá oferecer uma interface gráfica desenvolvida em JavaFX ou Swing.
+
+Considerações Finais
+
+O sistema tem como propósito facilitar o controle e o monitoramento de equipamentos e peças de hardware, promovendo uma gestão eficiente de manutenção e estoque nos laboratórios. Este documento deverá ser revisado periodicamente conforme novas funcionalidades e necessidades forem identificadas.
