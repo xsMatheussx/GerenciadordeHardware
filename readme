@@ -14,46 +14,8 @@ Este projeto tem como objetivo desenvolver um sistema para o gerenciamento efici
 
 ## Tecnologias Utilizadas
 
-- **Linguagem**: Java
+- **Linguagem**: Java----***-
 - **Interface Gráfica**: JavaFX ou Swing
-
-## Instalação
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/usuario/repo.git
-   ```
-
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd repo
-   ```
-
-3. Compile o projeto:
-   ```bash
-   mvn clean install
-   ```
-
-4. Execute o aplicativo:
-   ```bash
-   java -jar target/nome-do-arquivo.jar
-   ```
-
-## Uso
-
-Após a instalação, o usuário poderá acessar a interface do sistema e realizar operações de cadastro, controle e agendamento conforme os requisitos definidos.
-
-## Contribuição
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. Faça um fork do repositório.
-2. Crie uma nova branch para sua feature ou correção.
-3. Envie um pull request detalhando as mudanças realizadas.
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ## Contato
 
