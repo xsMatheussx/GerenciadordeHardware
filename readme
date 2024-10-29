@@ -1,64 +1,67 @@
-   Documento de Levantamento de Requisitos
+# Sistema de Gerenciamento de Estoque de Hardware
 
-Projeto: Sistema de Gerenciamento de Estoque de Hardware
-Data: 24/10/2024
-Responsáveis:
+## Descrição
 
-	•	Matheus da Silva da Cruz
-	•	David J. Abreu da Silva
+Este projeto tem como objetivo desenvolver um sistema para o gerenciamento eficiente de equipamentos de hardware em laboratórios, facilitando o controle de estoque, manutenção e reparos.
 
-1. Introdução
+## Funcionalidades
 
-1.1. Objetivo
+- **Cadastro de Equipamentos**: Permite o registro de equipamentos de hardware com especificações técnicas, vinculados a laboratórios específicos.
+- **Controle de Reparos e Manutenções**: Agendamento e acompanhamento de manutenções, registro de peças utilizadas.
+- **Controle de Peças e Estoque**: Cadastro de peças de hardware, controle de estoque e alertas de peças em falta.
+- **Gerenciamento de Laboratórios**: Associar equipamentos e peças a múltiplos laboratórios, com painéis informativos sobre status e estoque.
+- **Controle de Acesso e Usuários**: Criação de perfis de usuários com diferentes níveis de acesso.
 
-Este documento tem como objetivo detalhar os requisitos funcionais e não funcionais do sistema “Sistema de Gerenciamento de Estoque de Hardware”.
+## Tecnologias Utilizadas
 
-1.2. Escopo
+- **Linguagem**: Java
+- **Interface Gráfica**: JavaFX ou Swing
 
-O sistema será responsável por:
+## Instalação
 
-	•	Gerenciamento do cadastro e controle de equipamentos de hardware em 4 laboratórios.
-	•	Agendamento de manutenções e registro de reparos e peças substituídas.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/usuario/repo.git
+   ```
 
-2. Requisitos Funcionais
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd repo
+   ```
 
-2.1. Cadastro de Equipamentos
+3. Compile o projeto:
+   ```bash
+   mvn clean install
+   ```
 
-	•	O sistema deverá permitir o cadastro de equipamentos de hardware, com todas as suas especificações técnicas.
-	•	Cada equipamento deverá estar vinculado a um laboratório específico.
-	•	Exibir o status de cada equipamento.
+4. Execute o aplicativo:
+   ```bash
+   java -jar target/nome-do-arquivo.jar
+   ```
 
-2.2. Controle de Reparos e Manutenções
+## Uso
 
-	•	O sistema deverá permitir o agendamento e acompanhamento de manutenções pendentes e realizadas, com suas respectivas datas.
-	•	Registro das peças utilizadas em cada manutenção.
+Após a instalação, o usuário poderá acessar a interface do sistema e realizar operações de cadastro, controle e agendamento conforme os requisitos definidos.
 
-2.3. Controle de Peças e Estoque
+## Contribuição
 
-	•	O sistema deverá permitir o cadastro de peças de hardware, incluindo informações sobre marca e quantidade.
-	•	Controle de estoque para monitorar peças adicionadas e retiradas; quando uma peça estiver em falta, o sistema deverá exibir um alerta.
+Contribuições são bem-vindas! Para contribuir:
 
-2.4. Gerenciamento de Laboratórios
+1. Faça um fork do repositório.
+2. Crie uma nova branch para sua feature ou correção.
+3. Envie um pull request detalhando as mudanças realizadas.
 
-	•	O sistema deverá gerenciar múltiplos laboratórios, associando-os aos equipamentos e peças de hardware.
-	•	Fornecimento de painéis informativos que exibam o status dos equipamentos e a quantidade de peças em estoque em todos os laboratórios.
+## Licença
 
-2.5. Controle de Acesso e Usuários
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
-	•	O sistema deverá permitir a criação de perfis de usuários com diferentes níveis de acesso (ex. técnicos e administradores).
+## Contato
 
-3. Requisitos Não Funcionais
+Para dúvidas ou sugestões, entre em contato com os responsáveis:
 
-3.1. Usabilidade
+- Matheus da Silva da Cruz
+- David J. Abreu da Silva
 
-	•	O sistema deverá possuir uma interface intuitiva para facilitar o uso dos usuários.
+## Considerações Finais
 
-4. Requisitos de Interface
-
-4.1. Interface Gráfica
-
-	•	O sistema deverá oferecer uma interface gráfica desenvolvida em JavaFX ou Swing.
-
-Considerações Finais
-
-O sistema tem como propósito facilitar o controle e o monitoramento de equipamentos e peças de hardware, promovendo uma gestão eficiente de manutenção e estoque nos laboratórios. Este documento deverá ser revisado periodicamente conforme novas funcionalidades e necessidades forem identificadas.
+Este sistema visa promover uma gestão eficiente do estoque e manutenção de equipamentos de hardware nos laboratórios, podendo ser atualizado conforme novas necessidades forem identificadas.
