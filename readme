@@ -1,4 +1,4 @@
-#Sistema de Controle de Estoque para Equipamentos de Hardware
+# Sistema de Controle de Estoque para Equipamentos de Hardware
 
 ## Descrição Geral
 
@@ -58,17 +58,17 @@ Este sistema foi idealizado para oferecer uma solução eficiente no controle de
 
 ## Interface do Sistema
 
-- **Interface Gráfica**: Utilização de JavaFX ou Swing, proporcionando uma experiência visual agradável e organizada.
+- Interface Gráfica: Utilização de JavaFX ou Swing, proporcionando uma experiência visual agradável e organizada.
 
 ## Tecnologias
 
-- **Linguagem**: Java
+- Linguagem: Java
 - **Interface Gráfica**: JavaFX ou Swing, dependendo das necessidades do projeto.
 
-## Equipe de Desenvolvimento
+  Equipe de Desenvolvimento
 
-- **Matheus da Silva da Cruz**
-- **David J. Abreu da Silva**
+- Matheus da Silva da Cruz
+- David J. Abreu da Silva
 
 ## Considerações Finais
 
