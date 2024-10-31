@@ -75,4 +75,4 @@ Este sistema foi criado para **facilitar o controle de estoque** e o **gerenciam
 
 O sistema visa simplificar o **gerenciamento de estoque e equipamentos em laboratórios**, promovendo eficiência no controle e na manutenção. Atualizações futuras permitirão a adição de novas funcionalidades, conforme necessidades adicionais forem identificadas.
 
-🌟 **Este sistema está pronto para transformar o gerenciamento de equipamentos e componentes de hardware em um processo muito mais organizado e eficiente!**
+
