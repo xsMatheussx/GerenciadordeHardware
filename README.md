@@ -74,7 +74,6 @@ Este sistema foi criado para **facilitar o controle de estoque** e o **gerenciam
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
 Matheus da Silva da Cruz: motogmatheus362@gmail.com
-
 David JA Silva: daviddsx999@gmail.com 
 ---
 ##  Considerações Finais
