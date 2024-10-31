@@ -1,4 +1,3 @@
-Aqui está o texto revisado com diferentes emojis:
 
 # 📦 Sistema de Controle de Estoque para Equipamentos de Hardware 🧰
 
