@@ -75,7 +75,7 @@ Este sistema foi criado para **facilitar o controle de estoque** e o **gerenciam
 
 Matheus da Silva da Cruz: motogmatheus362@gmail.com
 
-David JA Silva: davidsx999@gmail.com
+David JA Silva: daviddsx999@gmail.com 
 ---
 ##  Considerações Finais
 
