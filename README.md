@@ -76,7 +76,7 @@ Este sistema foi criado para **facilitar o controle de estoque** e o **gerenciam
 Matheus da Silva da Cruz: motogmatheus362@gmail.com
 
 David JA Silva: daviddsx999@gmail.com 
----
+
 ##  Considerações Finais
 
 O sistema visa simplificar o **gerenciamento de estoque e equipamentos em laboratórios**, promovendo eficiência no controle e na manutenção. Atualizações futuras permitirão a adição de novas funcionalidades, conforme necessidades adicionais forem identificadas.
