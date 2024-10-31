@@ -70,7 +70,13 @@ Este sistema foi criado para **facilitar o controle de estoque** e o **gerenciam
 - **David J. Abreu da Silva**
 
 ---
+## CONTATOS
+![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
+Matheus da Silva da Cruz: motogmatheus362@gmail.com
+
+David JA Silva: davidsx999@gmail.com
+---
 ##  Considerações Finais
 
 O sistema visa simplificar o **gerenciamento de estoque e equipamentos em laboratórios**, promovendo eficiência no controle e na manutenção. Atualizações futuras permitirão a adição de novas funcionalidades, conforme necessidades adicionais forem identificadas.
