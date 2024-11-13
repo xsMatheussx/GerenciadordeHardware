@@ -13,7 +13,7 @@ public class conexaoDAO {
         String driver = "com.mysql.jdbc.Driver";  // Especifica o driver JDBC para o MySQL
 
         // URL do banco de dados, especificando o nome do banco
-        String url = "jdbc:mysql://localhost:3306/projetoaplicadoII";
+        String url = "jdbc:mysql://localhost:3306/sistemamanutencao";
         String user = "root";  // Usuário do banco de dados
         String password = "root";  // Senha do banco de dados
 
