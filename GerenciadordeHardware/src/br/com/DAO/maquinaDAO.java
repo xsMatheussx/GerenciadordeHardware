@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 public class maquinaDAO {
 
-    // Declaração das variáveis para conexão, preparação de declaração e resultado
+    // Declaração das variáveis para conexão, preparação de declaração e resultado.
     Connection conexao = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
