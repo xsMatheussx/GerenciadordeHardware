@@ -1,0 +1,88 @@
+-- Criação do banco de dados
+CREATE DATABASE SistemaManutencao;
+
+-- Selecionar o banco de dados
+USE SistemaManutencao;
+
+-- Criação da tabela de laboratórios
+CREATE TABLE laboratorios (
+    id_lab INT AUTO_INCREMENT PRIMARY KEY,
+    letra_lab VARCHAR(50) NOT NULL
+);
+
+-- Criação da tabela de usuários
+CREATE TABLE usuarios (
+    id_usu INT AUTO_INCREMENT PRIMARY KEY,
+    nome_usu VARCHAR(50) NOT NULL UNIQUE,
+    email_usu VARCHAR(50) NOT NULL UNIQUE,
+    senha_usu VARCHAR(20) NOT NULL,
+    perfil_usu VARCHAR(50) NOT NULL
+);
+
+-- Criação da tabela de equipamentos
+CREATE TABLE equipamentos (
+    id_eq INT AUTO_INCREMENT PRIMARY KEY,
+    status_equipamento VARCHAR(50) NOT NULL,
+    id_lab INT,
+    FOREIGN KEY (id_lab) REFERENCES laboratorios(id_lab)
+);
+
+-- Criação da tabela de peças
+CREATE TABLE pecas (
+    id_pc INT AUTO_INCREMENT PRIMARY KEY, 
+    marca_pc VARCHAR(50) NOT NULL,
+    estoque_pc INT NOT NULL,
+    nome_pc VARCHAR(50) NOT NULL,
+    id_eq INT,
+    FOREIGN KEY (id_eq) REFERENCES equipamentos(id_eq)
+);
+
+-- Criação da tabela de manutenções
+CREATE TABLE manutencoes (
+    id_mn INT AUTO_INCREMENT PRIMARY KEY,
+    data_mn DATE,
+    status_mn VARCHAR(50) NOT NULL,
+    horario_mn VARCHAR(50) NOT NULL,
+    tipo_mn VARCHAR(50) NOT NULL,
+    id_usu INT,
+    id_eq INT,
+    id_pc INT,
+    FOREIGN KEY (id_usu) REFERENCES usuarios(id_usu),
+    FOREIGN KEY (id_eq) REFERENCES equipamentos(id_eq),
+    FOREIGN KEY (id_pc) REFERENCES pecas(id_pc)
+);
+
+-- Inserindo dados na tabela laboratorios
+INSERT INTO laboratorios (letra_lab) VALUES 
+('A'),
+('B'),
+('C');
+
+-- Inserindo dados na tabela usuarios
+INSERT INTO usuarios (nome_usu, email_usu, senha_usu, perfil_usu) VALUES 
+('Administrador', 'motogmatheus362@gmail.com', 'senha123', 'Admin'),
+('Tecnico', 'daviddsx999@gmail.com', 'senha456', 'Tecnico');
+
+-- Inserindo dados na tabela equipamentos (associando equipamentos aos laboratórios)
+INSERT INTO equipamentos (status_equipamento, id_lab) VALUES 
+('Ativo', 1),
+('Inativo', 2),
+('Em manutenção', 3);
+
+-- Inserindo dados na tabela pecas (associando peças aos equipamentos)
+INSERT INTO pecas (marca_pc, estoque_pc, nome_pc, id_eq) VALUES 
+('Marca1', 100, 'Peça A', 1),
+('Marca2', 50, 'Peça B', 2),
+('Marca3', 200, 'Peça C', 3);
+
+-- Inserindo dados na tabela manutencoes (associando manutenções com usuários, equipamentos e peças)
+INSERT INTO manutencoes (data_mn, status_mn, horario_mn, tipo_mn, id_usu, id_eq, id_pc) VALUES 
+('2024-11-01', 'Concluída', '10:00', 'Preventiva', 1, 1, 1),
+('2024-11-02', 'Em andamento', '14:00', 'Corretiva', 2, 2, 2);
+
+-- Consultando os dados
+SELECT * FROM usuarios;
+SELECT * FROM manutencoes;
+SELECT * FROM equipamentos;
+SELECT * FROM laboratorios;
+SELECT * FROM pecas;
