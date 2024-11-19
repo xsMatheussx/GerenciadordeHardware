@@ -1,26 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
- */
+
 package br.com.VIEW;
 
 import br.com.DAO.consultarMaquinasDAO;
 
-/**
- *
- * @author Otávio
- */
+
+
 public class telaConsultarMaquinasVIEW extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form telaConsultarMaquinasVIEW
-     */
+  // Construtor
     public telaConsultarMaquinasVIEW() {
+       // Construtor
         initComponents();
-        consultarMaquinasDAO consultadao = new consultarMaquinasDAO();
-        consultadao.preenchertabela();
+        carregarDadosTabela();
     }
-
+    // Método para carregar os dados na tabela ao abrir a interface
+    private void carregarDadosTabela() {
+       consultarMaquinasDAO dao = new consultarMaquinasDAO();
+        dao.preenchertabelaMaq();
+    }
+ 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -71,7 +69,29 @@ public class telaConsultarMaquinasVIEW extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void tabelaConsultaMaquinaAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_tabelaConsultaMaquinaAncestorAdded
-        // TODO add your handling code here:
+       jScrollPane1 = new javax.swing.JScrollPane();
+        tabelaConsultaMaquina = new javax.swing.JTable();
+ tabelaConsultaMaquina.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {},
+            new String [] {
+                "ID", "Status", "Laboratório"
+                          }
+        ));
+  jScrollPane1.setViewportView(tabelaConsultaMaquina);
+javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 382, Short.MAX_VALUE)
+                .addContainerGap()) );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 7, Short.MAX_VALUE))
+        );
+        
     }//GEN-LAST:event_tabelaConsultaMaquinaAncestorAdded
 
 

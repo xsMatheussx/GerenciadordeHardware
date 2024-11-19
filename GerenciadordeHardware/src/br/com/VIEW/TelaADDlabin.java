@@ -5,9 +5,13 @@
  */
 package br.com.VIEW;
 
+import br.com.DAO.ControleAcessoDAO;
 import br.com.DAO.addLabinDAO;
 import br.com.DTO.laboratorioDTO;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+
+
 
 /**
  *

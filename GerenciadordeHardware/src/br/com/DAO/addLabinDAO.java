@@ -64,8 +64,7 @@ public class addLabinDAO {
     public void editar(laboratorioDTO labdto) {
 
         String sql = "update laboratorios set letra_lab = ? where id_lab = ?";  // Consulta de atualização
-        conexao = conexaoDAO.conector();  // Conecta ao banco de dados
-
+       
         try {
             // Prepara a consulta de atualização
             pst = conexao.prepareStatement(sql);

@@ -10,6 +10,7 @@ public class UsuarioDTO {
     private String senha_usu;    // Senha do usuário
     private String perfil_usu;   // Perfil ou papel do usuário (ex.: administrador, usuário comum)
 
+   
     // Método getter para obter o ID do usuário
     public int getId_usu() {
         return id_usu;

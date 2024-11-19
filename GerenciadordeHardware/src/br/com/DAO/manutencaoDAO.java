@@ -49,7 +49,7 @@ public class manutencaoDAO {
 
         // Consulta SQL para atualizar os dados de uma manutenção existente
         String sql = "update manutencoes set data_mn = ?, status_mn = ?, horario_mn = ?, tipo_mn = ?, id_eq = ? where id_mn = ?";
-        conexao = conexaoDAO.conector();  // Estabelece a conexão com o banco de dados
+      
 
         try {
             // Prepara a consulta SQL para atualização de dados

@@ -1,6 +1,5 @@
 package br.com.DAO;
 
-import br.com.VIEW.TelaAdministrador;
 import br.com.VIEW.telaConsultarMaquinasVIEW;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,38 +9,42 @@ import javax.swing.table.DefaultTableModel;
 
 public class consultarMaquinasDAO {
 
-    // Declaração das variáveis para conexão, preparação de declaração e resultado
     Connection conexao = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
-    
-    // Método para preencher a tabela de máquinas na interface
-    public void preenchertabela() {
 
-        String sql = "select * from equipamentos";  // Consulta SQL para selecionar todos os equipamentos
-        conexao = new conexaoDAO().conector();  // Estabelece a conexão com o banco de dados
+    // Método para preencher a tabela de máquinas
+    public void preenchertabelaMaq() {
+        String sql = "SELECT * FROM equipamentos";
+        conexao = new conexaoDAO().conector(); // Obtém a conexão com o banco
 
         try {
-            // Prepara a consulta SQL
             pst = conexao.prepareStatement(sql);
-            rs = pst.executeQuery();  // Executa a consulta e armazena o resultado em rs
-            
-            // Obtém o modelo da tabela na interface gráfica e limpa as linhas existentes
+            rs = pst.executeQuery();
+
+            // Obtém o modelo da tabela e limpa as linhas existentes
             DefaultTableModel model = (DefaultTableModel) telaConsultarMaquinasVIEW.tabelaConsultaMaquina.getModel();
             model.setRowCount(0);
 
-            // Itera sobre os resultados da consulta e adiciona cada equipamento como uma nova linha na tabela
+            // Adiciona os dados do banco de dados na tabela
             while (rs.next()) {
                 model.addRow(new Object[]{
-                    rs.getInt("id_eq"),  // Obtém o ID do equipamento
-                    rs.getString("status_equipamento"),  // Obtém o status do equipamento
-                    rs.getString("id_lab")  // Obtém o ID do laboratório ao qual o equipamento pertence
+                    rs.getInt("id_eq"),
+                    rs.getString("status_equipamento"),
+                    rs.getString("id_lab")
                 });
             }
-
         } catch (Exception e) {
-            // Exibe uma mensagem de erro caso ocorra uma exceção ao preencher a tabela
-            JOptionPane.showMessageDialog(null, "Erro ao preencher a tabela: " + e);
+            JOptionPane.showMessageDialog(null, "Erro ao preencher a tabela: " + e.getMessage());
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pst != null) pst.close();
+                if (conexao != null) conexao.close();
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Erro ao fechar recursos: " + e.getMessage());
+            }
         }
     }
 }
+    
